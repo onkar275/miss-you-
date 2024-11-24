@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Am Missing You</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa; /* Light grey background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff7f50; /* Coral color */
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            margin: 20px 0;
+            font-weight: 300;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        /* Button Styling */
+        .button {
+            padding: 12px 20px;
+            font-size: 1.2rem;
+            background-color: #ff7f50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            animation: fadeIn 5s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #ff4500; /* Darker coral color */
+        }
+
+        /* Keyframes for the fadeIn animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>I Am Missing You</h1>
+        <p>Distance is hard, but my thoughts are always with you.</p>
+
+        <!-- GIF of I miss you -->
+        <iframe src="https://giphy.com/embed/AoT3UZW99njkW9JRov" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/studiosoriginals-AoT3UZW99njkW9JRov">via GIPHY</a></p>
+        <button class="button" onclick="changeMessage()">Make me smile!</button>
+    </div>
+
+    <script>
+        function changeMessage() {
+            document.querySelector('h1').textContent = "I Can't Wait to See You Again!";
+            document.querySelector('p').textContent = "My heart is waiting for you...";
+            document.querySelector('button').textContent = "You're always on my mind!";
+        }
+    </script>
+
+</body>
+</html>
